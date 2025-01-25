@@ -1,0 +1,77 @@
+<!-- Before, After, Transition & Hover::Before,
+ ::Aftertransition Duration, Timing Function, Delay, Property:Hover, :Focus 
+ transform-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+
+        height: 100px;
+        width: 200px;
+        background-color: rgb(187, 0, 255);
+        transform: rotate(340deg);
+        color: rgb(255, 247, 0);
+        font-size: 20px;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+        .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(255, 72, 0);
+        transform:scale(0.10);
+        color: yellow;
+        font-size: 44px;
+        margin-top: 40px;
+        margin-left: 300px;
+      }
+        
+      .box3 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(0, 255, 55);
+       transition-duration: 2s;
+       
+       transition-property:width ;
+      
+        color: yellow;
+        font-size: 44px;
+      }
+        
+
+        .box2:hover{
+            transform:skewX(100deg);
+            animation-duration: 3s;
+            transition: 3s;
+        }
+      .box3:hover{
+        transform: skew(90deg);
+        transition: 2s;
+        background-color: red;
+        width: 50%;
+        margin-left: 10px;
+      }
+      #p::before{
+        content: "s";
+      }
+      #p:hover::after{
+        content: "😀";
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      CSS is Good Lorem, ipsum dolor sit 
+    </div>
+    <div class="box2">CSS is Good</div>
+     <div class="box3">CSS is Good</div>
+ 
+     <div id="p"></div>
+  </body>
+</html>
